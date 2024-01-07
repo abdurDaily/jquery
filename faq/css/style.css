@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2c2c2c;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#faq{
+    width: 1000px;
+    margin: auto;
+}
+#faq .qsn{
+    background-color: red;
+    padding: 10px;
+}
+#faq .ans{
+    background-color: aqua;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: justify;
+    transition: 0.5s all;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+#faq .ans.active{
+    margin-top: 0px;
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+}
